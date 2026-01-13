@@ -176,9 +176,9 @@ int nhiet_do(){
 int so_son(){
 	//bước 1 gán biến
 	float phu_duoc = 340, hang_rao_go_cao = 6, hang_rao_go_dai = 100,so_luong_gallon_can,chieu_cao_dai_cua_ao;
-	chieu_cao_dai_cua_ao = hang_rao_go_cao * hang_rao_go_dai
+	chieu_cao_dai_cua_ao = hang_rao_go_cao * hang_rao_go_dai,
 	so_luong_gallon_can = chieu_cao_dai_cua_ao/phu_duoc
-	cout << "dien tich cua ao la " << chieu_cao_dai_cua_ao << 
+	cout << "dien tich cua ao la " << chieu_cao_dai_cua_ao << endl;
 	return 0;
 }
 int main(){
