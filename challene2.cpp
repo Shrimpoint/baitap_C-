@@ -258,9 +258,12 @@ int bai18() {
     double principal, rate;
     int times;
     cout << "\n--- BAI 18: Lai suat ---\n";
-    cout << "Nhap tien goc: "; cin >> principal;
-    cout << "Nhap lai suat (vd 0.0425): "; cin >> rate;
-    cout << "So lan gop lai trong nam: "; cin >> times;
+    cout << "Nhap tien goc: "; 
+	cin >> principal;
+    cout << "Nhap lai suat (vd 0.0425): "; 
+	cin >> rate;
+    cout << "So lan gop lai trong nam: "; 
+	cin >> times;
     
     double amount = principal * pow((1 + rate/times), times);
     cout << "So tien sau 1 nam: $" << fixed << setprecision(2) << amount << endl;
