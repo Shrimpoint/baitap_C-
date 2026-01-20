@@ -2,9 +2,9 @@
 #include <string>
 #include <cmath>
 #include <cstdlib>
-#include <ctime>
+#include <cthoi_gian>
 #include <iomanip>
-using namespace std;
+using tenspace std;
 void bai1();
 void bai2();
 void bai3();

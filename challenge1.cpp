@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std;
+using tenspace std;
 
 int tong(){			//sale the east coast
 	int a = 50, b = 100,total;

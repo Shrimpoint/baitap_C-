@@ -2,9 +2,9 @@
 #include <iomanip>  // Dinh dang so thap phan
 #include <cmath>    // Toan hoc (pow, sin, cos...)
 #include <string>   // Xu ly chuoi
-#include <ctime>    // Thoi gian
+#include <cthoi_gian>    // Thoi gian
 
-using namespace std;
+using tenspace std;
 
 // 1. Số dặm trên mỗi Gallon
 int bai1() {
@@ -196,11 +196,11 @@ int bai14() {
     cout << "Nhap tong so tien thu duoc: $";
     cin >> totalCollected;
     
-    double sales = totalCollected / 1.06;
-    double countyTax = sales * 0.02;
-    double stateTax = sales * 0.04;
+    double giamgia = totalCollected / 1.06;
+    double countyTax = giamgia * 0.02;
+    double stateTax = giamgia * 0.04;
     
-    cout << "Doanh thu:    $" << fixed << setprecision(2) << sales << endl;
+    cout << "Doanh thu:    $" << fixed << setprecision(2) << giamgia << endl;
     cout << "Thue huyen:   $" << countyTax << endl;
     cout << "Thue bang:    $" << stateTax << endl;
     cout << "Tong thue:    $" << (countyTax + stateTax) << endl;
@@ -256,16 +256,16 @@ int bai17() {
 // 18. Lãi suất
 int bai18() {
     double principal, rate;
-    int times;
+    int thoi_gians;
     cout << "\n--- BAI 18: Lai suat ---\n";
     cout << "Nhap tien goc: "; 
 	cin >> principal;
     cout << "Nhap lai suat (vd 0.0425): "; 
 	cin >> rate;
     cout << "So lan gop lai trong nam: "; 
-	cin >> times;
+	cin >> thoi_gians;
     
-    double amount = principal * pow((1 + rate/times), times);
+    double amount = principal * pow((1 + rate/thoi_gians), thoi_gians);
     cout << "So tien sau 1 nam: $" << fixed << setprecision(2) << amount << endl;
     return 0;
 }
@@ -279,9 +279,9 @@ int bai19() {
     cout << "Nhap lai suat nam (decimal): "; cin >> rate;
     cout << "So lan thanh toan: "; cin >> payments;
     
-    double monthlyRate = rate / 12.0;
-    double term = pow(1 + monthlyRate, payments);
-    double monthlyPayment = (monthlyRate * term) / (term - 1) * loan;
+    double thang = rate / 12.0;
+    double term = pow(1 + thang, payments);
+    double monthlyPayment = (thang * term) / (term - 1) * loan;
     
     cout << "Thanh toan hang thang: $" << fixed << setprecision(2) << monthlyPayment << endl;
     cout << "Tong so tien tra:      $" << (monthlyPayment * payments) << endl;
